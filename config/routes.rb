@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  devise_for :users
   resources :blogs
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  root "home#index"
+  # Blogs
+  get 'home/index'
+
+
+  # Devise
+  get 'users/sign_in'
+  get 'user/sign_up'
+
+
+  # Root
+    root "home#index"
+    
 end
