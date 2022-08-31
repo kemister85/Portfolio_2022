@@ -36,4 +36,4 @@
 /node_modules
 
 # Dotenv
-/.env
+.env
