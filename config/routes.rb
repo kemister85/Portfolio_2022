@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :blogs
 
   # Blogs
-  get 'home/index'
+  get 'blogs/index'
 
 
   # Devise
