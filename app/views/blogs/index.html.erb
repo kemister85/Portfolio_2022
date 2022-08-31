@@ -12,5 +12,16 @@
   <% end %>
 </div>
 
-<%= link_to "New blog", new_blog_path %>
+
+<% if user_signed_in? %>
+  <%= link_to "New blog", new_blog_path %>
+  <%= link_to "Edit this blog", edit_blog_path(@blog) %>
+  <%= button_to "Destroy this blog", @blog, method: :delete %>  
+  <% else %>
+<% end %>
+
+<div>
+  <%= link_to "Back to blogs", blogs_path %>
+</div>
+
 <script src="https://vjs.zencdn.net/7.20.2/video.min.js"></script>
