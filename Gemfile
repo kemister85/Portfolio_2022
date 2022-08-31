@@ -19,6 +19,7 @@ gem 'rmagick'
 gem "image_processing", "~> 1.2"
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem "font-awesome-sass", "~> 6.1.2"
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
