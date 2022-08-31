@@ -17,6 +17,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem 'rmagick'
 gem "image_processing", "~> 1.2"
+gem 'devise', '~> 4.8', '>= 4.8.1'
+gem "font-awesome-sass", "~> 6.1.2"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
